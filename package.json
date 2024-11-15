@@ -2,8 +2,9 @@
   "name": "movie-database",
   "version": "1.0.0",
   "description": "Explorer for a movie database",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "lint": "eslint . ",
