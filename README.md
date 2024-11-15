@@ -21,7 +21,6 @@ This project is a RESTful API designed to manage a movie database stored in a JS
 * controllers, Handles HTTP requests
 * services, Business logic and data processing
 * repositories, Database access
-* models, Data models
 * utils, Helper functions
 * data, datafiles
 
