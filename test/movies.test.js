@@ -1,9 +1,8 @@
-import chai from 'chai';
-import chaiHttp from 'chai-http';
+import { use, expect } from 'chai'
+import chaiHttp from 'chai-http'
 import app from '../app.js';
 
-const { expect } = chai;
-chai.use(chaiHttp);
+const chai = use(chaiHttp)
 
 describe('Movies API', () => {
   describe('GET /api/movies', () => {
