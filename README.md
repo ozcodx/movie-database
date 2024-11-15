@@ -77,16 +77,12 @@ Retrieve the full list of movies.
 ]
 ```
 
-Future Improvements
+### Future Improvements
 
-Dockerize the application.
-
-Add more endpoints for filtering and classifying movies.
-
-Implement playlist navigation.
-
-Optimize the performance of the classification algorithm.
-
+- Dockerize the application.
+- Add more endpoints for filtering and classifying movies.
+- Implement playlist navigation.
+- Optimize the performance of the classification algorithm.
 
 ### License
 
