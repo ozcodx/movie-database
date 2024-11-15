@@ -1,11 +1,10 @@
-const fs = require('fs').promises;
-const path = require('path');
+import fs from 'fs/promises';
+import path from 'path';
 
-const MOVIES_FILE_PATH = path.join(__dirname, '../data/movies.json');
+const MOVIES_FILE_PATH = path.resolve('data/movies.json');
 
 const getAllMovies = async () => {
   try {
-    // Reads the database file
     const data = await fs.readFile(MOVIES_FILE_PATH, 'utf-8');
     return JSON.parse(data);
   } catch (error) {
@@ -14,6 +13,6 @@ const getAllMovies = async () => {
   }
 };
 
-module.exports = {
-  getAllMovies,
+export default {
+  getAllMovies
 };

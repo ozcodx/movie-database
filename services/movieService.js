@@ -1,8 +1,8 @@
-const movieRepository = require('../repositories/movieRepository');
+import movieRepository from '../repositories/movieRepository.js';
 
-const getAllMovies = async () => {
+export const getAllMovies = async () => {
   try {
-    //Get the movies from repository
+    // Obtener las películas desde el repositorio
     const movies = await movieRepository.getAllMovies();
     return movies;
   } catch (error) {
@@ -11,6 +11,6 @@ const getAllMovies = async () => {
   }
 };
 
-module.exports = {
-  getAllMovies,
+export default {
+  getAllMovies
 };
